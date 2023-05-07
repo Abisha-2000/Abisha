@@ -9,6 +9,10 @@ file = st.file_uploader("Pick a file")
 if file is not None:
     df= pd.read_csv(file)
     st.write(df)
+
+
+    st.write("The Description of the file selected")
+    st.write(df.describe())
     
     column = st.selectbox("Select a column name : ",np.array(df.columns))
 

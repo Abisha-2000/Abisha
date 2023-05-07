@@ -8,4 +8,4 @@ file = st.file_uploader("Pick a file")
 
 df= pd.read_csv(file)
 
-st.write(df)
+st.dataframe(df)

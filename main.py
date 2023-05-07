@@ -12,4 +12,4 @@ if file is not None:
     
     column = st.selectbox("Select a column name : ",np.array(df.columns))
 
-    st.write(df[column].describe)
+    st.write(df[column].describe())

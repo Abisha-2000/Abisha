@@ -5,7 +5,6 @@ st.write ("Sentiment Analysis")
 
 file = st.file_uploader("Pick a file")
 
-
-df= pd.read_csv(file)
-
-st.dataframe(df)
+if file is not None:
+    df= pd.read_csv(file)
+    st.write(df)

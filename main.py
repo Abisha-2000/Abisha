@@ -15,8 +15,10 @@ if file is not None:
     st.write(df.describe())
     
     column = st.selectbox("Select a column name : ",np.array(df.columns))
-
+    
+    st.write("Description of the selected column")
     st.write(df[column].describe())
 
     if(len(df[column].unique()) < 10):
+        st.write("The Unique Values in the selected column")
         st.write(df[column].unique())

@@ -9,4 +9,4 @@ if file is not None:
     df= pd.read_csv(file)
     st.write(df)
 
-    st.selectbox("Enter a column name to generate a report",df.columns())
+    st.selectbox(df.columns())

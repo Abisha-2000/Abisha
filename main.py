@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import python -m textblob.download_corpora lite
 from textblob import TextBlob
 import cleantext
 

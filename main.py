@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import textblob.download_corpora lite
-from textblob import TextBlob
+import TextBlob
 import cleantext
 
 st.write ("Sentiment Analysis")

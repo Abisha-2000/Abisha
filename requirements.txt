@@ -1,2 +1,2 @@
 textblob==0.17.1
-clean-text==1.1.4
+clean-text==0.6.0

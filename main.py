@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from textblob import TextBlob
+import cleantext
 
 st.write ("Sentiment Analysis")
 
@@ -22,11 +24,7 @@ if file is not None:
     if(len(df[column].unique()) < 10):
         st.write("The Unique Values in the selected column")
         st.write(df[column].unique())
-        
-        from textblob import TextBlob
-import cleantext
-
-
+       
 st.header('Sentiment Analysis')
 with st.expander('Analyze Text'):
     text = st.text_input('Text here: ')

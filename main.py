@@ -12,12 +12,14 @@ if uploaded_file is not None:
   st.write(df)
 
 if st.button("Analyze the Sentiment"):
+	
 blob = TextBlob(Twitter)
 result = blob.sentiment
 polarity = result.polarity
 subjectivity = result.subjectivity
 return str_p == str_q
 if polarity < 0:
+	
 	st.warning("The entered text has negative sentiments associated with it"+str(polarity))
 	rain(
 	emoji="????",
@@ -26,6 +28,7 @@ if polarity < 0:
 	animation_length="infinite", # for how much time the animation will happen
 )
 if polarity >= 0:
+	
 	st.success("The entered text has positive sentiments associated with it."+str(polarity))
 	rain(
 	emoji="????",
@@ -33,4 +36,5 @@ if polarity >= 0:
 	falling_speed=3, # speed of raining
 	animation_length="infinite", # for how much time the animation will happen
 	)
+	
 st.success(result)

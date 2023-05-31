@@ -16,6 +16,7 @@ blob = TextBlob(Twitter)
 result = blob.sentiment
 polarity = result.polarity
 subjectivity = result.subjectivity
+return str_p == str_q
 if polarity < 0:
 	st.warning("The entered text has negative sentiments associated with it"+str(polarity))
 	rain(

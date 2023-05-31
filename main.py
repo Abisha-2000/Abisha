@@ -12,7 +12,7 @@ if uploaded_file is not None:
   st.write(df)
 
 if st.button("Analyze the Sentiment"):
-blob = TextBlob(message)
+blob = TextBlob(Twitter)
 result = blob.sentiment
 polarity = result.polarity
 subjectivity = result.subjectivity

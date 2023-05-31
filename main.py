@@ -36,7 +36,7 @@ with st.expander('Analyze CSV'):
 
 #
     if finalSentimentdata2:
-        df = pd.read_csv(finalSentimentdata2.csv)
+        df = pd.read_csv(finalSentimentdata2)
         del df['Unnamed: 0']
         df['score'] = df['tweets'].apply(score)
         df['analysis'] = df['score'].apply(analyze)
